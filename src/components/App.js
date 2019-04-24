@@ -1,7 +1,8 @@
 import React, { Component, Fragment } from 'react';
-import { HashRouter, Route, Switch, Link } from 'react-router-dom';
+import { HashRouter, Route, Switch } from 'react-router-dom';
 import Shop from './Shop';
 import NotFound from './NotFound';
+import Intro from './Intro';
 
 class App extends Component {
   render() {
@@ -9,26 +10,7 @@ class App extends Component {
       <Fragment>
         <HashRouter hashType="noslash">
           <Switch>
-            <Route exact path="/" render={() =>
-              <div className="container text-center">
-                <h1>Simple React Shop</h1>
-
-                <Link to="/shop">
-                  <i className="fas fa-shopping-cart fa-10x"></i>
-                </Link>
-                <h3>Built with</h3>
-                <div className="text-left box">
-
-                  <ul>
-                    <li key="1">React</li>
-                    <li key="2">React Router</li>
-                    <li key="3">Bootstrap</li>
-                    <li key="4">FontAwesome</li>
-                  </ul>
-                </div>
-
-              </div>
-            } />
+            <Route exact path="/" component={Intro} />
             <Route path="/shop" component={Shop} />
             <Route component={NotFound} />
           </Switch>
