@@ -3,7 +3,7 @@
 This is a small demo to show how the State can be used in React (**without Redux**) to create a shopping cart.
 
 
-##You should use
+## You should use
 - React  
 *Components, Props & States, Lifecycle methods*
 - React Router  
