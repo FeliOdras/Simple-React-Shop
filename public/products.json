@@ -1,0 +1,26 @@
+{
+  "8164cc06-159a-435f-b9ae-0e6b0804acff": {
+    "_id": "8164cc06-159a-435f-b9ae-0e6b0804acff",
+    "name": "Product One",
+    "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+    "price": 4.99
+  },
+  "12734471-dcd4-4d67-b1f5-298b0b62a2a4": {
+    "_id": "12734471-dcd4-4d67-b1f5-298b0b62a2a4",
+    "name": "Product Two",
+    "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+    "price": 12.99
+  },
+  "d7dee787-434a-42c3-ae7d-4d28c8a83dac": {
+    "_id": "d7dee787-434a-42c3-ae7d-4d28c8a83dac",
+    "name": "Product Three",
+    "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+    "price": 42.95
+  },
+  "2612cff5-62ee-4b85-9642-969f1688d5d3": {
+    "_id": "2612cff5-62ee-4b85-9642-969f1688d5d3",
+    "name": "Product Four",
+    "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+    "price": 2.99
+  }
+}

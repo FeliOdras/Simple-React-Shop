@@ -1,0 +1,30 @@
+{
+  "name": "react-shopping",
+  "version": "1.0.0",
+  "description": "A small React exercise using the basic features",
+  "scripts": {
+    "build-css": "node-sass-chokidar src/sass/ -o src/css/",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "license": "MIT",
+  "homepage": "https://fbw-12.github.io/Simple-React-Shop/",
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.8.1",
+    "bootstrap": "^4.3.1",
+    "node-sass-chokidar": "^1.3.4",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-router-dom": "^5.0.0",
+    "react-scripts": "^3.0.0"
+  }
+}
