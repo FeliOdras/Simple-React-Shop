@@ -1,21 +1,35 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
 
-export default class Product extends Component {
+class Product extends Component {
+
+
     render() {
-        return (
+        const product = this.props.product;
 
-            <div class="col-sm-6 col-md-6 col-lg-6">
-                <div class="product">
-                    <h2>Product One</h2>
-                    <div class="description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</div>
-                    <div class="price">€ 4.99</div>
-                    <div class="form-inline mt-2"><input type="text" class="form-control form-control-sm  mr-2" size="4" value="1" />
-                        <button class="add-to-cart btn btn-sm btn-primary"><i class="fas fa-shopping-cart">
-                        </i> Add to cart</button>
-                    </div>
+        return (
+            <div className="product">
+                <h2>{product.name}</h2>
+                <div className="description">{product.description}</div>
+                <div className="price">€ {product.price}</div>
+
+                <div className="form-inline mt-2">
+                    <input
+                        type="text"
+                        className="form-control form-control-sm  mr-2"
+                        defaultValue="1"
+                        size="4"
+
+                    />
+                    <button
+                        className="add-to-cart btn btn-sm btn-primary"
+
+                    >
+                        <i className="fas fa-shopping-cart"></i> Add to cart
+          </button>
                 </div>
             </div>
-
-        )
+        );
     }
 }
+
+export default Product;
