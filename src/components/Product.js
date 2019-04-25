@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
 class Product extends Component {
-
+    inputAmount = React.createRef();
 
     render() {
         const product = this.props.product;
@@ -18,11 +18,11 @@ class Product extends Component {
                         className="form-control form-control-sm  mr-2"
                         defaultValue="1"
                         size="4"
-
+                        ref={this.inputAmount}
                     />
                     <button
                         className="add-to-cart btn btn-sm btn-primary"
-
+                        onClick={() => this.props.addProductToCart(product._id, Number(this.inputAmount.current.value))}
                     >
                         <i className="fas fa-shopping-cart"></i> Add to cart
           </button>

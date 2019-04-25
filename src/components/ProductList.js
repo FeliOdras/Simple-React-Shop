@@ -24,7 +24,8 @@ export default class ProductList extends Component {
                                     <Product
                                         key={id}
                                         product={this.props.products[id]}
-
+                                        //pass it down again - props to pass the function to child component
+                                        addProductToCart={this.props.addProductToCart}
                                     />
                                 </div>
                             ))}

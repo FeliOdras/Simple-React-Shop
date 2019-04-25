@@ -8,7 +8,9 @@ export default class Shop extends Component {
     constructor() {
         super();
         this.state = {
-            products: {}
+            products: {},
+            //add cart to the state
+            cart: {}
         };
     }
 
@@ -18,7 +20,7 @@ export default class Shop extends Component {
 
 
     loadProducts() {
-        fetch("./products.json")
+        fetch("products.json")
             .then(response => {
                 return response.json();
             })
@@ -30,7 +32,26 @@ export default class Shop extends Component {
             });
     }
 
+    // the function to add product to cart
+    addProductToCart = (productId, amount) => {
+        console.log(`Add ${productId} quantity ${amount}`)
 
+        // if productId is in the state
+        // increase its amout
+
+
+
+
+        // otherweise
+        // add it to the state
+
+        this.setState(state => {
+            state.cart[productId] = amount;
+            return state;
+        });
+
+
+    }
 
     render() {
         return (
@@ -39,7 +60,8 @@ export default class Shop extends Component {
                     <div className="col-sm-6 col-md-6 col-lg-6">
                         <ProductList
                             products={this.state.products}
-
+                            // the prop to pass the function to child component
+                            addProductToCart={this.addProductToCart}
                         />
                     </div>
                     <div className="col-sm-6 col-md-6 col-lg-6">
