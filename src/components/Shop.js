@@ -36,20 +36,18 @@ export default class Shop extends Component {
     addProductToCart = (productId, amount) => {
         console.log(`Add ${productId} quantity ${amount}`)
 
-        // if productId is in the state
-        // increase its amout
-
-
-
-
-        // otherweise
-        // add it to the state
-
-        this.setState(state => {
-            state.cart[productId] = amount;
-            return state;
-        });
-
+        if (productId in this.state.cart) {
+            this.setState(state => {
+                state.cart[productId] += amount;
+                console.log(state)
+                return state;
+            });
+        } else {
+            this.setState(state => {
+                state.cart[productId] = amount;
+                return state;
+            });
+        }
 
     }
 
