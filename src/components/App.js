@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import { HashRouter, Route, Switch } from 'react-router-dom';
-import Shop from './Shop';
+import Shop from './Shop.js';
 import NotFound from './NotFound';
 import Intro from './Intro';
 
